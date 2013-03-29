@@ -39,6 +39,7 @@ SITE
       openssl (>= 0.0.0)
     runit (1.1.0)
       build-essential (>= 0.0.0)
+    ssh_known_hosts (0.7.4)
     unicorn (1.2.2)
     windows (1.8.4)
       chef_handler (>= 0.0.0)
@@ -51,4 +52,5 @@ DEPENDENCIES
   git (>= 0)
   nodejs (>= 0)
   postgresql (>= 0)
+  ssh_known_hosts (>= 0)
 
