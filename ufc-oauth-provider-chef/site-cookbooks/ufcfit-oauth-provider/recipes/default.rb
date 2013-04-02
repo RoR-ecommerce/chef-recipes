@@ -9,3 +9,4 @@
 
 include_recipe "ufcfit-oauth-provider::postgresql"
 include_recipe "ufcfit-oauth-provider::rails_app"
+include_recipe "ufcfit-oauth-provider::thin"

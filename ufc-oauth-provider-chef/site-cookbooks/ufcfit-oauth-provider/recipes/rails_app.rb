@@ -30,14 +30,6 @@ application app_name do
     end
   end
 
-  nginx_load_balancer do
-    application_port 3000
-    only_if { node['roles'].include?('web') }
-  end
-  
-  before_migrate do
-  end
-
   #before_migrate do
     #template "#{shared_path}/database.yml" do
       #source "database.yml.erb"
