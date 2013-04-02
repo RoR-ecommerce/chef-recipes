@@ -12,6 +12,7 @@ application app_name do
   #strategy :timestamped_deploy
   environment_name 'production'
   migrate true
+  #application_server_role 'web'
 
   repository "git@github.com:khurramzaman/ufc-oauth-provider.git"
   deploy_key deploy_key_item['deploy_key']
@@ -28,6 +29,11 @@ application app_name do
       password database_item['password']
       encoding database_item['encoding']
     end
+  end
+
+  nginx_load_balancer do
+    server_name "ufc-api.test"
+    only_if { node['roles'].include?("#{app_name}_load_balancer") }
   end
 
   #before_migrate do
