@@ -9,10 +9,8 @@ application app_name do
   owner "ubuntu"
   group "ubuntu"
 
-  #strategy :timestamped_deploy
   environment_name 'production'
   migrate true
-  #application_server_role 'web'
 
   repository "git@github.com:khurramzaman/ufc-oauth-provider.git"
   deploy_key deploy_key_item['deploy_key']
@@ -35,19 +33,4 @@ application app_name do
     server_name "ufc-api.test"
     only_if { node['roles'].include?("#{app_name}_load_balancer") }
   end
-
-  #before_migrate do
-    #template "#{shared_path}/database.yml" do
-      #source "database.yml.erb"
-      #owner "ubuntu"
-      #group "ubuntu"
-      #mode "644"
-      #variables :config => app_item['database']
-    #end
-
-    #execute "ln -s ../../../shared/database.yml config/database.yml" do
-      #user "ubuntu"
-      #cwd release_path
-    #end
-  #end
 end
