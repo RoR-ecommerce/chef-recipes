@@ -1,0 +1,11 @@
+{
+  "name": "data_bag_item_ssh_known_hosts_github",
+  "json_class": "Chef::DataBagItem",
+  "chef_type": "data_bag_item",
+  "data_bag": "ssh_known_hosts",
+  "raw_data": {
+    "rsa": "AAAAB3NzaC1yc2EAAAABIwAAAQEArw3L6UVqWUCPQitro6uCzj5WCzR4oQ2T4E/VZdRnQ+CfQ6B1gUfuS9+m6HbCrKtzGmVXd8Obm7HqlAVipg08mJLZoQhFKGgHrNuNbOYZQORbcCHuMnVX2MLJ3LvmE7Wa1ETsmzts6BJR1ACCWK5ugthBhVN8dVg83OtxLUEbja54pMbCWbjCz/jNMeGacxDP3AvCExENEwvuUyCTDH0jKGqINA0AF0lQE1vFq7bcIUmy2kS0JuJi0jFKwJItwIL9HfBzP0+/x2QZmeD+2XgQglsOwrFLpZ4g2k2A7+m3NKB5nvYzSDwi2oiD1iWaoVUZgew4/KLbvEBnH9RLvwlEVQ==",
+    "fqdn": "github.com",
+    "id": "github"
+  }
+}

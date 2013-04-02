@@ -11,7 +11,8 @@ cookbook 'nodejs'
 cookbook 'application_ruby'
 cookbook 'application_nginx'
 
-cookbook 'postgresql'
+cookbook 'postgresql',
+  :git => 'https://github.com/phlipper/chef-postgresql'
 
 cookbook 'ssh_known_hosts'
 

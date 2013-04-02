@@ -7,4 +7,5 @@
 # All rights reserved - Do Not Redistribute
 #
 
+include_recipe "ufcfit-oauth-provider::postgresql"
 include_recipe "ufcfit-oauth-provider::rails_app"
